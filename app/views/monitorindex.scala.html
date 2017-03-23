@@ -1,0 +1,16 @@
+@(title: String)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+</head>
+<body>
+    Zookeeper-Quorum: <input type="text" name="ZKQ" value="localhost:2181"><br>
+    Kafka-Topic: <input type="text" name="topicName" value="Topic Name"><br>
+    <button onClick=@(routes.Application.index)>Consume Kafka Msgs</button>
+</body>
+</html>
