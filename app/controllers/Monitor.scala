@@ -6,7 +6,7 @@ import play.api.mvc._
 object Monitor extends Controller {
 
   def monitorData = Action{
-    Ok(views.html.monitorindex("manali"))
+    Ok(views.html.monitorindex("Monitor Kafka"))
   }
 
 
